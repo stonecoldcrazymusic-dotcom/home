@@ -4,49 +4,6 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
-<style>
-.band-container {
-display: flex;
-gap: 40px;
-justify-content: center;
-align-items: flex-start;
-margin-top: 20px;
-font-family: Arial, sans-serif;
-}
-
-
-.band-block {
-text-align: center;
-text-decoration: none;
-color: inherit;
-}
-
-
-.band-image {
-width: 300px;
-height: 200px;
-object-fit: cover;
-filter: grayscale(100%);
-transition: filter 0.3s ease;
-}
-.band-image:hover {
-filter: none;
-}
-
-
-.band-title {
-font-weight: bold;
-margin-top: 8px;
-font-size: 1.4em;
-}
-
-
-.band-subtitle {
-font-variant: small-caps;
-font-size: 0.9em;
-margin-top: 2px;
-}
-</style>
 
 <!doctype html>
 <html lang="en">
@@ -92,6 +49,49 @@ margin-top: 2px;
 
 			<h1>🧑‍🚀 Hello, Artist!</h1>
 
+<style>
+.band-container {
+display: flex;
+gap: 40px;
+justify-content: center;
+align-items: flex-start;
+margin-top: 20px;
+font-family: Arial, sans-serif;
+}
+
+
+.band-block {
+text-align: center;
+text-decoration: none;
+color: inherit;
+}
+
+
+.band-image {
+width: 300px;
+height: 200px;
+object-fit: cover;
+filter: grayscale(100%);
+transition: filter 0.3s ease;
+}
+.band-image:hover {
+filter: none;
+}
+
+
+.band-title {
+font-weight: bold;
+margin-top: 8px;
+font-size: 1.4em;
+}
+
+
+.band-subtitle {
+font-variant: small-caps;
+font-size: 0.9em;
+margin-top: 2px;
+}
+</style>
 
 
 <div class="band-container">
