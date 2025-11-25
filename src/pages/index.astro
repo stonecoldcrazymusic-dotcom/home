@@ -49,35 +49,24 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 			<h1>🧑‍🚀 Hello, Artist!</h1>
 
-<p>
-<!-- Image linking to the band's website -->
-<atps://band-website.example
-  <img
-    src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/290103/23ebc0377c26d18c88ff1d67d0998157e1366245/original/22ad-bandpic-sept-2023-2.jpg/!!/b%3AW1sicmVzaXplIiwxMDAwXSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
-    alt="Band photo – September 2023"
-    class="band-image"
-    loading="lazy"
-dth as requested */
-    height: auto;          /* preserve aspect ratio */
-    display: inline-block;
-    filter: grayscale(100%);           /* greyscale by default */
-    transition: filter 200ms ease-in;  /* smooth hover reveal */
-  }
-
-  /* Reveal color on hover */
-  .band-image:hover,
-  a:hover .band-image {
-    filter: none;
-  }
-
-  /* Respect users who prefer reduced motion */
-  @media (prefers-reduced-motion: reduce) {
-    .band-image {
-      transition: none;
-    }
-  }
-</style>
-</p>
+			<a href="https://examplebandwebsite.com" target="_blank">
+			  <img 
+			    src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/290103/23ebc0377c26d18c88ff1d67d0998157e1366245/original/22ad-bandpic-sept-2023-2.jpg/!!/b%3AW1sicmVzaXplIiwxMDAwXSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg" 
+			    alt="Band Picture"
+			    class="band-image"
+			    width="100"
+			  >
+			</a>
+			
+			<style>
+			  .band-image {
+			    filter: grayscale(100%);
+			    transition: filter 0.3s ease;
+			  }
+			  .band-image:hover {
+			    filter: none;
+			  }
+			</style>
 
 			<p> <img src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/290103/23ebc0377c26d18c88ff1d67d0998157e1366245/original/22ad-bandpic-sept-2023-2.jpg/!!/b%3AW1sicmVzaXplIiwxMDAwXSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg">
 				<a href="https://22admusic.com/">22AD</a>
