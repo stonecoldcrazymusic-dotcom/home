@@ -14,9 +14,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header />
 		<main>
 <p>
-    <img
+ <center>   <img
       src="https://raw.githubusercontent.com/stonecoldcrazymusic-dotcom/home/refs/heads/main/src/content/SCClogo.png"
-      alt="Stone Cold Crazy" width="500">
+      alt="Stone Cold Crazy" width="400"> </center>
 <p>
 
 			<p>
@@ -63,6 +63,28 @@ Stone Cold Crazy is a dynamic music, new media & digital culture consultancy and
   }
   .scc-band-image:hover,
   .scc-band-block:focus-within .scc-band-image {
+    filter: none;               /* color on hover / focus */
+    transform: translateY(-2px);
+  }
+
+  .scc-cons-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;               /* keeps block width consistent */
+    text-decoration: none;
+    color: inherit;
+  }
+  .scc-cons-image {
+    width: 180px;
+    height: 90px;              /* fixed height so both images match */
+    object-fit: cover;          /* crop larger images to fit box */
+    display: block;
+    filter: grayscale(100%);    /* greyscale by default */
+    transition: filter 0.3s ease, transform 0.25s ease;
+  }
+  .scc-cons-image:hover,
+  .scc-cons-block:focus-within .scc-cons-image {
     filter: none;               /* color on hover / focus */
     transform: translateY(-2px);
   }
@@ -224,6 +246,49 @@ Stone Cold Crazy provides expert festival bookings, sponsorship coordination, st
 			<p>
 			Stone Cold Crazy specializes in new media and digital culture consultancy, offering strategic insights, innovative marketing, and social commerce solutions to help brands grow, connect, and succeed in the evolving digital landscape.
 			</p>
+
+<div class="scc-band-row">
+  <!-- First cons block -->
+  <a class="scc-cons-block" href="https://examplebandwebsite.com" target="_blank" rel="noopener noreferrer">
+    <img
+      class="scc-cons-image"
+      src="https://raw.githubusercontent.com/stonecoldcrazymusic-dotcom/home/refs/heads/main/src/content/pinkpop.jpeg"
+      alt="Pinkpop">
+    <div class="scc-band-title">Pinkpop</div>
+    <div class="scc-band-subtitle">volunteer coordination</div>
+  </a>
+
+  <!-- Second cons block -->
+  <a class="scc-cons-block" href="https://examplebandwebsite.com/sparrowfalls" target="_blank" rel="noopener noreferrer">
+    <img
+      class="scc-cons-image"
+      src="https://raw.githubusercontent.com/stonecoldcrazymusic-dotcom/home/refs/heads/main/src/content/pinkpopclassic.jpeg"
+      alt="Pinkpop Classic">
+    <div class="scc-band-title">Pinkpop Classic</div>
+    <div class="scc-band-subtitle">volunteer coordination</div>
+  </a>
+
+  <!-- Third cons block -->
+  <a class="scc-cons-block" href="https://examplebandwebsite.com/sparrowfalls" target="_blank" rel="noopener noreferrer">
+    <img
+      class="scc-cons-image"
+      src="https://raw.githubusercontent.com/stonecoldcrazymusic-dotcom/home/refs/heads/main/src/content/pinkpopclassic.jpeg"
+      alt="Pinkpop Classic">
+    <div class="scc-band-title">Pinkpop Classic</div>
+    <div class="scc-band-subtitle">volunteer coordination</div>
+  </a>
+</div>
+
+
+
+<div id="div_contact"></div>
+
+			<h1>Contact</h1>
+			<p>
+			Stone Cold Crazy
+			Duurstedelaan 30
+			Utrecht
+</p>
 
 		</main>
 		<Footer />
