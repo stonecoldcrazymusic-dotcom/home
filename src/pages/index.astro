@@ -15,15 +15,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<main>
 			<h1>🧑‍🚀 Hello, Person!</h1>
 			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
+				Stone Cold Crazy coordinates seamless touring: booking, pre-production, logistics, and tour management, delivering reliable artist support, efficient budgeting, problem-solving, and on-site leadership to ensure consistently successful, stress-free live campaigns internationally.
 			</p>
 			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
+				Stone Cold Crazy delivers expert festival bookings, sponsorship coordination, stage management, and artist handling, ensuring seamless events, maximizing audience engagement, and providing professional, reliable support for artists and organizers alike.
 			</p>
 			<p>Here are a few ideas on how to get started with the template:</p>
 			<ul>
@@ -49,65 +44,96 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 			<h1>🧑‍🚀 Hello, Artist!</h1>
 
+<!-- START: Stone Cold Crazy — Band image pair -->
 <style>
-.band-container {
-display: flex;
-gap: 40px;
-justify-content: center;
-align-items: flex-start;
-margin-top: 20px;
-font-family: Arial, sans-serif;
-}
+  /* Scoped classes to avoid collisions with page styles */
+  .scc-band-row {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
+  .scc-band-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;               /* keeps block width consistent */
+    text-decoration: none;
+    color: inherit;
+  }
 
-.band-block {
-text-align: center;
-text-decoration: none;
-color: inherit;
-}
+  .scc-band-image {
+    width: 300px;
+    height: 200px;              /* fixed height so both images match */
+    object-fit: cover;          /* crop larger images to fit box */
+    display: block;
+    filter: grayscale(100%);    /* greyscale by default */
+    transition: filter 0.3s ease, transform 0.25s ease;
+  }
+  .scc-band-image:hover,
+  .scc-band-block:focus-within .scc-band-image {
+    filter: none;               /* color on hover / focus */
+    transform: translateY(-2px);
+  }
 
+  .scc-band-title {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.1;
+  }
 
-.band-image {
-width: 300px;
-height: 200px;
-object-fit: cover;
-filter: grayscale(100%);
-transition: filter 0.3s ease;
-}
-.band-image:hover {
-filter: none;
-}
+  .scc-band-subtitle {
+    margin-top: 4px;
+    font-variant: small-caps;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #333;
+  }
 
+  /* Make sure focus outline is visible for keyboard users */
+  .scc-band-block:focus-within {
+    outline: 3px solid rgba(0,0,0,0.08);
+    border-radius: 4px;
+  }
 
-.band-title {
-font-weight: bold;
-margin-top: 8px;
-font-size: 1.4em;
-}
-
-
-.band-subtitle {
-font-variant: small-caps;
-font-size: 0.9em;
-margin-top: 2px;
-}
+  /* Responsive: stack on small screens */
+  @media (max-width: 680px) {
+    .scc-band-row {
+      flex-direction: column;
+      gap: 18px;
+      align-items: center;
+    }
+  }
 </style>
 
+<div class="scc-band-row">
+  <!-- First band block -->
+  <a class="scc-band-block" href="https://examplebandwebsite.com" target="_blank" rel="noopener noreferrer">
+    <img
+      class="scc-band-image"
+      src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/290103/23ebc0377c26d18c88ff1d67d0998157e1366245/original/22ad-bandpic-sept-2023-2.jpg/!!/b%3AW1sicmVzaXplIiw1MDAwXSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
+      alt="22AD — band photo">
+    <div class="scc-band-title">22AD</div>
+    <div class="scc-band-subtitle">Bookings. Pre-production. Tour Management</div>
+  </a>
 
-<div class="band-container">
-<a href="https://examplebandwebsite.com" class="band-block" target="_blank">
-<img class="band-image" src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/290103/23ebc0377c26d18c88ff1d67d0998157e1366245/original/22ad-bandpic-sept-2023-2.jpg/!!/b%3AW1sicmVzaXplIiw1MDAwXSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg" alt="22AD">
-<div class="band-title">22AD</div>
-<div class="band-subtitle">bookings. pre-production. tour management</div>
-</a>
-
-
-<a href="https://examplebandwebsite.com" class="band-block" target="_blank">
-<img class="band-image" src="https://f4.bcbits.com/img/0028182193_10.jpg" alt="Sparrow Falls">
-<div class="band-title">Sparrow Falls</div>
-<div class="band-subtitle">bookings. pre-production. tour management</div>
-</a>
+  <!-- Second band block -->
+  <a class="scc-band-block" href="https://examplebandwebsite.com/sparrowfalls" target="_blank" rel="noopener noreferrer">
+    <img
+      class="scc-band-image"
+      src="https://f4.bcbits.com/img/0028182193_10.jpg"
+      alt="Sparrow Falls — band photo">
+    <div class="scc-band-title">Sparrow Falls</div>
+    <div class="scc-band-subtitle">Bookings. Pre-production. Tour Management</div>
+  </a>
 </div>
+<!-- END: Stone Cold Crazy — Band image pair -->
+
 
 <div id="div_consultancy"></div>
 
